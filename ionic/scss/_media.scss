@@ -1,0 +1,244 @@
+// For desktop
+.converter {
+    /* The following styles apply for desktop */
+    .content.landscape {
+        .screen {
+            height: 30%;
+            display: table;
+            .from {
+                height: 100%;
+                width: 50%;
+                display: table-cell;
+            }
+            .to {
+                border-left: solid 1px #ddd;
+                height: 100%;
+                width: 50%;
+                display: table-cell;
+            }
+        }
+        .pad {
+            height: 70%;
+            .row {
+                height: 33.3%;
+            }
+        }
+    }
+    .content.portrait {
+        .screen {
+            height: 40%;
+            .from {
+                height: 50%;
+            }
+            .to {
+                border-top: solid 1px #ddd;
+                height: 50%;
+            }
+            .from,
+            .to {
+                .img-icon {
+                    top: 20%;
+                    height: 60%;
+                }
+                .label {
+                    font-size: 18px;
+                }
+                .number {
+                    font-size: 70px;
+                }
+            }
+        }
+        .pad {
+            height: 60%;
+            .row {
+                height: 25%;
+            }
+        }
+    }
+}
+
+// iPhone 5 & 5S in portrait & landscape (this would also cover android phones with the similar device size)
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    .header-item {
+        .landscape-nav-menu {
+            right: -40px;
+        }
+    }
+    .converter {
+        .content.landscape {
+            .screen {
+                .from,
+                .to {
+                    .img-icon {
+                        top: 20%;
+                        height: 60%;
+                        min-width: 60px;
+                        width: 60px;
+                    }
+                    .label {
+                        font-size: 14px;
+                    }
+                    .number {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        .content.portrait {
+            .screen {
+                height: 40%;
+                .from {
+                    height: 50%;
+                }
+                .to {
+                    border-top: solid 1px #ddd;
+                    height: 50%;
+                }
+                .from,
+                .to {
+                    .img-icon {
+                        top: 20%;
+                        height: 60%;
+                        min-width: 65px;
+                        width: 65px;
+                    }
+                    .label {
+                        font-size: 14px;
+                    }
+                    .number {
+                        font-size: 50px;
+                    }
+                }
+            }
+            .pad {
+                height: 60%;
+                .row {
+                    height: 25%;
+                }
+            }
+        }
+    }
+}
+
+// iPhone 6 in portrait & landscape (this would also cover android phones with the similar device size)
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    /* STYLES GO HERE */
+    .converter {
+        .content.landscape {
+            .screen {
+                .from,
+                .to {
+                    .img-icon {
+                        top: 20%;
+                        height: 60%;
+                        min-width: 60px;
+                        width: 60px;
+                    }
+                    .label {
+                        font-size: 14px;
+                    }
+                    .number {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        .content.portrait {
+            .screen {
+                height: 40%;
+                .from {
+                    height: 50%;
+                }
+                .to {
+                    border-top: solid 1px #ddd;
+                    height: 50%;
+                }
+                .from,
+                .to {
+                    .img-icon {
+                        top: 20%;
+                        height: 60%;
+                        min-width: 75px;
+                        width: 75px;
+                    }
+                    .label {
+                        font-size: 18px;
+                    }
+                    .number {
+                        font-size: 50px;
+                    }
+                }
+            }
+            .pad {
+                height: 60%;
+                .row {
+                    height: 25%;
+                }
+            }
+        }
+    }
+}
+
+// iPhone 6 Plus in portrait & landscape (this would also cover android phones with the similar device size)
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+    /* STYLES GO HERE */
+    .header-item {
+        .landscape-nav-menu {
+            right: 0px;
+        }
+    }
+    .converter {
+        .content.landscape {
+            .screen {
+                .from,
+                .to {
+                    .img-icon {
+                        top: 20%;
+                        height: 60%;
+                        min-width: 60px;
+                        width: 60px;
+                    }
+                    .label {
+                        font-size: 16px;
+                    }
+                    .number {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        .content.portrait {
+            .screen {
+                height: 40%;
+                .from {
+                    height: 50%;
+                }
+                .to {
+                    border-top: solid 1px #ddd;
+                    height: 50%;
+                }
+                .from,
+                .to {
+                    .img-icon {
+                        top: 20%;
+                        height: 60%;
+                        min-width: 85px;
+                        width: 85px;
+                    }
+                    .label {
+                        font-size: 18px;
+                    }
+                    .number {
+                        font-size: 50px;
+                    }
+                }
+            }
+            .pad {
+                height: 60%;
+                .row {
+                    height: 25%;
+                }
+            }
+        }
+    }
+}

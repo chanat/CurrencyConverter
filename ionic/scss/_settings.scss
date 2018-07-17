@@ -1,0 +1,12 @@
+.settings {
+    background: $dark;
+    ion-item {
+        border-color: #363636;
+        background: $dark !important;
+        color: #f4f4f4;
+    }
+    ion-item.active {
+        border-color: #363636;
+        background: $positive !important;
+    }
+}

@@ -1,0 +1,143 @@
+/* Navbar */
+
+.header-item {
+    overflow: visible !important;
+    .landscape-nav-title {
+        float: left;
+    }
+    .landscape-nav-menu {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 44px;
+        .menu-item {
+            position: relative;
+            top: -2px;
+            display: inline-block;
+            width: auto;
+            padding: 6px 10px;
+            border: solid 1px #4f6575;
+            font-size: 12px;
+            border-radius: 10px;
+            line-height: 1.2em;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .menu-item.active{
+            background: #385469;
+        }
+    }
+}
+
+.converter {
+    /* View size */
+    .scroll {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    /* Basic styles */
+    .content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .screen {
+            position: relative;
+            width: 100%;
+            .from,
+            .to {
+                position: relative;
+                overflow: hidden;
+                .img-icon {
+                    position: relative;
+                    top: 10%;
+                    display: inline-block;
+                    width: 30%;
+                    max-width: 100px;
+                    height: 80%;
+                    margin: 0 10px;
+                    // Make image always stay in the middle of the parent div
+                    img {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        height: 100%;
+                        max-height: 100px;
+                    }
+                }
+                .label {
+                    position: relative;
+                    display: inline-block;
+                    height: 100%;
+                    vertical-align: top;
+                    font-size: 24px;
+                    color: #333;
+                    .text {
+                        position: relative;
+                        display: flex;
+                        justify-content: center; // align horizontal
+                        align-items: center; // align vertical
+                        cursor: pointer;
+                        height: 100%;
+                    }
+                }
+                .number {
+                    position: absolute;
+                    height: 100%;
+                    top: 0px;
+                    right: 0px;
+                    padding-right: 30px;
+                    font-size: 90px;
+                    color: #333;
+                    .text {
+                        position: relative;
+                        display: flex;
+                        justify-content: center; // align horizontal
+                        align-items: center; // align vertical
+                        cursor: pointer;
+                        height: 100%;
+                    }
+                }
+            }
+            .to {
+                .label,
+                .number {
+                    color: #57c9d4;
+                }
+            }
+        }
+        .pad {
+            position: relative;
+            width: 100%;
+            height: 60%;
+            background: $positive;
+            .row {
+                padding: 0px;
+                margin: 0px;
+            }
+            .row.border-bottom {
+                border-bottom: solid 1px $positive-border;
+            }
+        }
+        .col {
+            color: #fff;
+            font-size: 40px;
+            font-weight: 300;
+            border-top: 0px;
+            /* Center text vertically */
+            display: flex;
+            justify-content: center; // align horizontal
+            align-items: center; // align vertical
+            cursor: pointer;
+        }
+        .col.border-right {
+            border-right: solid 1px $positive-border;
+        }
+        .col:active {
+            background: $positive-border;
+        }
+    }
+}
