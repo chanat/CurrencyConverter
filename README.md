@@ -1,10 +1,10 @@
 # CurrencyConverter
-A simple responsive currency converter application build with Ionic Framework v.1.7.16.
+A simple, responsive currency converter application built with Ionic Framework v.1.7.16.
 
 To run, follow the below instructions:
 - Download and install NodeJS on your machine. https://nodejs.org/en/download/
 - Download this project
-- Open the terminal, then go to the downloaded folder
+- Open the terminal (or Command Prompt on Windows), then go to the downloaded folder
 - Open nodejs folder
 - Run 
 ```bash
